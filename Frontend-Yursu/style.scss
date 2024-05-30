@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
+    overflow-y: scroll;
+
+    html{
+        scroll-behavior: smooth;
+    }
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 19px;
+    background: #F03164;
+}
+
+header{
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+    position: fixed;
+    background: #ffffff;
+    width: 100%;
+    height: 70px;
+    padding-top: 0.50rem;
+    font-size: 16px;
+
+    .menu{
+        word-spacing: 30px;
+
+        ul li{
+            display: inline-block;
+        }
+
+        ul li:nth-child(1){
+            color: #F03164;
+            border: 1px solid #f0316425;
+            padding: 8px;
+            font-weight: 700;
+        }
+    }
+
+}
+
+em{
+    color: #F03164;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    margin-left: 6px;
+}
+
+.banner{
+    background-image: url(../assets/img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: #fff;
+    margin-top: 5rem;
+
+    .banner-texto{
+        margin-left: 8%;
+        padding: 2rem;
+        padding-top: 3rem;
+        width: 550px;
+        font-size: 3rem;
+    }
+
+}
+
+/*REASONS*/
+
+.reasons{
+    margin: auto;
+    width: 80%;
+
+
+    .reasons h1{
+        text-align: center;
+    }
+}
+
+.reasons-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-bottom: 4rem;
+    text-align: left;
+
+    .reasons-grid1 p{
+        font-size: 15px;
+        color: #2e2e2e;
+        line-height: 20px;
+    }
+}
+
+:is(.reasons, .about, .services){
+    margin: auto;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.about{
+    margin-bottom: 4rem;
+}
+
+.about-text{
+    background: #F03164;
+    color: #fff;
+    z-index: 3;
+    padding: 2rem;
+    width: 500px;
+    position: absolute;
+    margin-top: 6rem;
+    line-height: 30px;
+}
+
+.about-img{
+    text-align: right;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .services-yursu{
+        padding: 2rem;
+        border-radius: 4px;
+    }
+}
+
+.services-yursu:nth-child(even){
+    background: #F03164;
+    color: #fff;
+}
+
+.card-yursu{
+    background-image: url(../assets/img/mountain.png);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    height: 290px;
+
+    .card-yursu-btn button{
+        border: 0;
+        padding: 1rem;
+        background: #F03164;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .card-yursu-btn button:hover{
+        background: #fff;
+        color: #F03164;
+    }
+}
+.contact{
+    background: #F6F8F7;
+    height: auto;
+    text-align: center;
+    padding: 4rem;
+}
+
+.contact-yursu button{
+        border: 0;
+        padding: 1rem;
+        background: #F03164;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 250px;
+}
+
+
+.contact-text{
+    margin-bottom: 2rem;
+}
+
+.contact-text p{
+        font-size: 16px;
+        color: #2e2e2e;
+        line-height: 20px;
+}
+
+input{
+    padding: 1rem;
+    width: 360px;
+    font-size: 14px;
+    margin: 8px;
+    border: 0;
+    outline: 0;
+    transition: all .2s;
+
+    border-bottom: 2px solid #ffffff00;
+}
+
+textarea{
+    outline: 0;
+    border: 0;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:is(input, textarea):focus{
+    border-bottom: 2px solid #F03164;
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: 0.60fr 0.50fr;
+    padding: 3rem 6rem 3rem 6rem;
+    
+
+    .rodape-text{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 3px;
+    }
+}
+
+.rodape-newsletter input{
+    background: #F6F8F7;
+    width: 250px;
+}
+
+.rodape-newsletter p{
+    color: #F03164;
+    font-weight: 700;
+}
+
+.rodape-newsletter button{
+    background: #F03164;
+    color: #fff;
+    padding: 1rem;
+    width: 150px;
+    font-size: 14px;
+    border: 0;
+    outline: 0;
+    transition: all .2s;
+    border-radius: 4px;
+}
+
+.card-group-redes{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+footer{
+    background: #F03164;
+    color: #fff;
+    padding: 0.30rem;
+    text-align: center;
+}
